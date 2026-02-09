@@ -3,7 +3,6 @@ from pydantic import BaseModel, EmailStr, AnyUrl, Field
 from typing import List , Dict , Optional, Annotated
 
 class Patient(BaseModel):
-
     name: Annotated[str, Field(max_length=50, title='Name of the Patient',description='Give the name of patient in less than 50 chars',examples=['Nitish','Amit'])]
     email:EmailStr
     linkedin_url :AnyUrl
