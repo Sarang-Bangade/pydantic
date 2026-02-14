@@ -38,7 +38,9 @@ def update_patient_data(patient:Patient):
 
 patient_info = {'name':'Sarang','email':'abc@hdfc.com' ,'age':23, 'weight':'75.2','married':True, 'allergies':[], 'contact_details':{'email':'abc@gmail.com','phone':'23456789'}}
 
+
 patient1 = Patient(**patient_info)
+
 
 # insert_patient_data(patient1)
 update_patient_data(patient1)
